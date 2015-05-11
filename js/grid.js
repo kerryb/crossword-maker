@@ -1,6 +1,9 @@
 $(function() {
   createGrid();
-  resetGrid();
+  $("#reset-0").bind("click", function() { resetGrid(1, 1); return false });
+  $("#reset-1").bind("click", function() { resetGrid(0, 0); return false });
+  $("#reset-2").bind("click", function() { resetGrid(0, 1); return false });
+  $("#reset-3").bind("click", function() { resetGrid(1, 0); return false });
 });
 
 function createGrid() {
@@ -13,11 +16,10 @@ function createGrid() {
   });
 }
 
-function resetGrid() {
+function resetGrid(first_block_row, first_block_col) {
   $("#grid td").removeClass("block");
-  _.each(_.range(1, 14, 2), function(row) {
-    _.each(_.range(1, 14, 2), function(col) {
-      console.log(row, col);
+  _.each(_.range(first_block_row, 15, 2), function(row) {
+    _.each(_.range(first_block_col, 15, 2), function(col) {
       $("#grid .row-" + row + " .col-" + col).addClass("block");
     });
   });
