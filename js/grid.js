@@ -21,24 +21,28 @@ function resetGrid(first_block_row, first_block_col) {
   $("#grid td").removeClass("block");
   _.each(_.range(first_block_row, 15, 2), function(row) {
     _.each(_.range(first_block_col, 15, 2), function(col) {
-      blockCell(row, col);
+      blockCell({row: row, col: col});
     });
   });
 }
 
 function clickCell(e) {
   cell = $(this);
-  if (cell.hasClass("block")) {
-    unblockCell(cell.data("row"), cell.data("col"));
-  } else {
-    blockCell(cell.data("row"), cell.data("col"));
-  }
+  fn = (cell.hasClass("block")) ? unblockCell : blockCell;
+  _.each(cellPair(cell.data("row"), cell.data("col")), fn);
 }
 
-function blockCell(row, col) {
-  $("#grid .row-" + row + " .col-" + col).addClass("block");
+function cellPair(row, col) {
+  return [
+    {row: row, col: col},
+    {row: 14 - row, col: 14 - col}
+  ];
 }
 
-function unblockCell(row, col) {
-  $("#grid .row-" + row + " .col-" + col).removeClass("block");
+function blockCell(cell) {
+  $("#grid .row-" + cell.row + " .col-" + cell.col).addClass("block");
+}
+
+function unblockCell(cell) {
+  $("#grid .row-" + cell.row + " .col-" + cell.col).removeClass("block");
 }
