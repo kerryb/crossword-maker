@@ -3,11 +3,13 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/site.css" />
-    <link rel="stylesheet" type="text/css" href="css/grid.css" />
     <title>Crossword maker</title>
   </head>
   <body>
     <table id="grid"></table>
+    <div id="stats">
+      <p>Blocked: <span id="percent-blocked">0</span>%</p>
+    </div>
     <div id="reset">
       Reset grid:
       <a id="reset-0" href="#"><img src="img/grid-0.png" alt="Grid 0" /></a>
@@ -18,5 +20,6 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="js/grid.js"></script>
+    <script src="js/stats.js"></script>
   </body>
 </html>

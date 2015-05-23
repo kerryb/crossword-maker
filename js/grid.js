@@ -25,12 +25,14 @@
         blockCell({row: row, col: col});
       });
     });
+    $(document).trigger("grid-updated");
   }
 
   function clickCell(e) {
     cell = $(this);
     fn = (cell.hasClass("block")) ? unblockCell : blockCell;
     _.each(cellPair(cell.data("row"), cell.data("col")), fn);
+    $(document).trigger("grid-updated");
   }
 
   function cellPair(row, col) {
