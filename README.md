@@ -19,7 +19,7 @@ Oh, and there aren't any tests either, which isn't so good (let's call it a spik
 * Preset starter grids
 * Automatic symmetry when blocking/unblocking cells
 * Display of percentage blocked
-* Auto-numbering of clues
+* Auto-numbering of clues (but see [issue 3](https://github.com/kerryb/crossword-maker/issues/3))
 
 ## Planned (or at least imagined) features
 
