@@ -20,6 +20,11 @@ body {
   background-color: black;
 }
 
+.number {
+  font-size: 0.6em;
+  float: left;
+}
+
 #reset {
   margin-left: 30px;
   font-size: 1.5em;
