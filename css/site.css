@@ -30,6 +30,29 @@ body {
   font-size: 1.5em;
 }
 
-#reset img {
+button.reset-button{
   cursor: pointer;
+  border:0;
+  display:inline-block;
+  font-size:0;
+  background-repeat:no-repeat;
+  width: 26px;
+  height: 26px;
+  vertical-align: top;
+}
+
+button#reset-0{
+  background-image:url(../img/grid-0.png);
+}
+
+button#reset-1{
+  background-image:url(../img/grid-1.png);
+}
+
+button#reset-2{
+  background-image:url(../img/grid-2.png);
+}
+
+button#reset-3{
+  background-image:url(../img/grid-3.png);
 }
