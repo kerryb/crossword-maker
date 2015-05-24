@@ -1,10 +1,10 @@
 (function() {
   $(function() {
     createGrid();
-    $("#reset-0").bind("click", function(event) { event.preventDefault(); resetGrid(1, 1); });
-    $("#reset-1").bind("click", function(event) { event.preventDefault(); resetGrid(0, 0); });
-    $("#reset-2").bind("click", function(event) { event.preventDefault(); resetGrid(0, 1); });
-    $("#reset-3").bind("click", function(event) { event.preventDefault(); resetGrid(1, 0); });
+    $("#reset-0").bind("click", function() { resetGrid(1, 1); });
+    $("#reset-1").bind("click", function() { resetGrid(0, 0); });
+    $("#reset-2").bind("click", function() { resetGrid(0, 1); });
+    $("#reset-3").bind("click", function() { resetGrid(1, 0); });
     $("#grid td").bind("click", clickCell);
   });
 
