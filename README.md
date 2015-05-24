@@ -2,6 +2,8 @@
 
 _A web app to take the drudgery out of building crossword grids._
 
+You can play with the current version [here](http://kerryb.github.io/crossword-maker/).
+
 Normally I start by drawing the grid out by hand on an index card, which can be a bit tedious.
 I wanted to have a go at building a simple web app without using any fancy frameworks, and this
 seemed like a good candidate.
