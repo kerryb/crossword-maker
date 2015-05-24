@@ -42,11 +42,15 @@
     ];
   }
 
+  function findCell(cell){
+    return $("#grid .row-" + cell.row + " .col-" + cell.col);
+  };
+
   function blockCell(cell) {
-    $("#grid .row-" + cell.row + " .col-" + cell.col).addClass("block");
+    findCell(cell).addClass("block");
   }
 
   function unblockCell(cell) {
-    $("#grid .row-" + cell.row + " .col-" + cell.col).removeClass("block");
+    return findCell(cell).removeClass("block");
   }
 }).call();
