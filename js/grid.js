@@ -29,8 +29,8 @@
   }
 
   function clickCell() {
-    cell = $(this);
-    fn = (cell.hasClass("block")) ? unblockCell : blockCell;
+    var cell = $(this);
+    var fn = (cell.hasClass("block")) ? unblockCell : blockCell;
     _.each(cellPair(cell.data("row"), cell.data("col")), fn);
     $(document).trigger("grid-updated");
   }
@@ -51,6 +51,6 @@
   }
 
   function unblockCell(cell) {
-    return findCell(cell).removeClass("block");
+    findCell(cell).removeClass("block");
   }
 }).call();
