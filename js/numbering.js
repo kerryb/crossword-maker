@@ -1,7 +1,9 @@
-(function() {
-  $(function() {
+CrosswordMaker.Numbering = (function() {
+  var _this = {};
+
+  _this.bind = function() {
     $(document).bind("grid-updated", numberClues);
-  });
+  };
 
   function numberClues() {
     $("#grid .number").remove();
@@ -34,4 +36,6 @@
   function numberCell(cell, number) {
     $(cell).append('<div class="number">' + number + '</div>');
   }
-}).call();
+
+  return _this;
+}).call($);
