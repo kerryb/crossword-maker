@@ -10,10 +10,16 @@ body {
   vertical-align: top;
 }
 
-#grid td {
+#grid .row {
+  display: inline-block;
+}
+
+#grid .cell {
   border: 1px solid black;
   width: 30px;
   height: 30px;
+  margin-bottom: -1px;
+  margin-right: -1px;
 }
 
 .block {
@@ -23,6 +29,7 @@ body {
 .number {
   font-size: 0.6em;
   float: left;
+  vertical-align: top;
 }
 
 #reset {

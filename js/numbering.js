@@ -8,7 +8,7 @@ CrosswordMaker.Numbering = (function() {
   function numberClues() {
     $("#grid .number").remove();
     var number = 1;
-    $("#grid td:not(.block)").each(function() {
+    $("#grid .cell:not(.block)").each(function() {
       if (startOfAcrossWord(this) || startOfDownWord(this)) {
         numberCell(this, number++);
       }
@@ -20,8 +20,8 @@ CrosswordMaker.Numbering = (function() {
     var col = $(cell).data("col");
     return (col === 0 ||
             (col < 14 &&
-             $("#grid td.block[data-row=" + row + "][data-col=" + (col - 1) + "]").length &&
-             $("#grid td:not(.block)[data-row=" + row + "][data-col=" + (col + 1) + "]").length));
+             $("#grid .cell.block[data-row=" + row + "][data-col=" + (col - 1) + "]").length &&
+             $("#grid .cell:not(.block)[data-row=" + row + "][data-col=" + (col + 1) + "]").length));
   }
 
   function startOfDownWord(cell) {
@@ -29,8 +29,8 @@ CrosswordMaker.Numbering = (function() {
     var col = $(cell).data("col");
     return (row === 0 ||
             (row < 14 &&
-             $("#grid td.block[data-col=" + col + "][data-row=" + (row - 1) + "]").length &&
-             $("#grid td:not(.block)[data-col=" + col + "][data-row=" + (row + 1) + "]").length));
+             $("#grid .cell.block[data-col=" + col + "][data-row=" + (row - 1) + "]").length &&
+             $("#grid .cell:not(.block)[data-col=" + col + "][data-row=" + (row + 1) + "]").length));
   }
 
   function numberCell(cell, number) {

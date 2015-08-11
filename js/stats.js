@@ -6,7 +6,7 @@ CrosswordMaker.Stats = (function() {
   };
 
   function updateStats() {
-    $("#percent-blocked").text(($("td.block").size() / 2.25).toFixed(1));
+    $("#percent-blocked").text(($(".cell.block").size() / 2.25).toFixed(1));
   }
 
   return _this;
