@@ -11,7 +11,7 @@
   function createGrid() {
     _.each(_.range(15), function(row_index) {
       $("#grid").append('<tr class="row-' + row_index + '"></tr>');
-      row = $(".row-" + row_index)
+      row = $(".row-" + row_index);
       _.each(_.range(15), function(col_index) {
         row.append('<td class="col-' + col_index + '" data-row="' + row_index + '" data-col="' + col_index + '"></td>');
       });
@@ -44,7 +44,7 @@
 
   function findCell(cell){
     return $("#grid .row-" + cell.row + " .col-" + cell.col);
-  };
+  }
 
   function blockCell(cell) {
     findCell(cell).addClass("block");

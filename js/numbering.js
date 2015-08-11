@@ -16,7 +16,7 @@
   function startOfAcrossWord(cell) {
     var row = $(cell).data("row");
     var col = $(cell).data("col");
-    return (col == 0 ||
+    return (col === 0 ||
             (col < 14 &&
              $("#grid td.block[data-row=" + row + "][data-col=" + (col - 1) + "]").length &&
              $("#grid td:not(.block)[data-row=" + row + "][data-col=" + (col + 1) + "]").length));
@@ -25,7 +25,7 @@
   function startOfDownWord(cell) {
     var row = $(cell).data("row");
     var col = $(cell).data("col");
-    return (row == 0 ||
+    return (row === 0 ||
             (row < 14 &&
              $("#grid td.block[data-col=" + col + "][data-row=" + (row - 1) + "]").length &&
              $("#grid td:not(.block)[data-col=" + col + "][data-row=" + (row + 1) + "]").length));
