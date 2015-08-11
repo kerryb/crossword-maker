@@ -12,7 +12,8 @@ The app is entirely client-side and static (no frameworks; no build process; no 
 jade or sass: just plain old html, javascript and css). I did use jquery and underscore though
 &ndash; there are limits!
 
-Oh, and there aren't any tests either, which isn't so good (let's call it a spike for now).
+Oh, and there hardly any tests so far, which isn't so good (let's call it a
+spike for now, but I'm starting to retrofit it with Jasmine specs).
 
 ## Current features
 
@@ -20,6 +21,10 @@ Oh, and there aren't any tests either, which isn't so good (let's call it a spik
 * Automatic symmetry when blocking/unblocking cells
 * Display of percentage blocked
 * Auto-numbering of clues (but see [issue 3](https://github.com/kerryb/crossword-maker/issues/3))
+
+## Known issues
+
+See the [Github issues page](https://github.com/kerryb/crossword-maker/issues)
 
 ## Planned (or at least imagined) features
 
