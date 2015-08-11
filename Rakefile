@@ -1,4 +1,5 @@
 require "jasmine"
+ENV['JASMINE_CONFIG_PATH'] = "spec/support/jasmine.yml"
 load "jasmine/tasks/jasmine.rake"
 
 require "jshintrb/jshinttask"

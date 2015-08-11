@@ -44,7 +44,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   jasmine.Fixtures = function () {
     this.containerId = 'jasmine-fixtures'
     this.fixturesCache_ = {}
-    this.fixturesPath = 'spec/javascripts/fixtures'
+    this.fixturesPath = 'spec/fixtures'
   }
 
   jasmine.Fixtures.prototype.set = function (html) {
@@ -165,7 +165,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   jasmine.StyleFixtures = function () {
     this.fixturesCache_ = {}
     this.fixturesNodes_ = []
-    this.fixturesPath = 'spec/javascripts/fixtures'
+    this.fixturesPath = 'spec/fixtures'
   }
 
   jasmine.StyleFixtures.prototype.set = function (css) {
@@ -217,7 +217,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
   jasmine.JSONFixtures = function () {
     this.fixturesCache_ = {}
-    this.fixturesPath = 'spec/javascripts/fixtures/json'
+    this.fixturesPath = 'spec/fixtures/json'
   }
 
   jasmine.JSONFixtures.prototype.load = function () {

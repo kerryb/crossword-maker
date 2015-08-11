@@ -3,6 +3,7 @@ src_files:
   - js/**/*.js
 stylesheets:
   - css/**/*.css
+spec_dir: spec
 helpers:
   - helpers/**/*.js
 spec_files:
