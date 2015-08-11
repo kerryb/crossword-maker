@@ -1,0 +1,8 @@
+src_files:
+  - js/**/*.js
+stylesheets:
+  - css/**/*.css
+helpers:
+  - "helpers/**/*.js"
+spec_files:
+  - "**/*[sS]pec.js"
