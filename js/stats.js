@@ -2,12 +2,12 @@ CrosswordMaker.Stats = (function() {
   var _this = {};
   
   _this.bind = function() {
-    $(document).bind("grid-updated", updateStats);
+    $(document).bind("grid-updated", CrosswordMaker.Stats.update);
   };
 
-  function updateStats() {
+  _this.update = function() {
     $("#percent-blocked").text(($(".cell.block").size() / 2.25).toFixed(1));
-  }
+  };
 
   return _this;
 }).call($);
