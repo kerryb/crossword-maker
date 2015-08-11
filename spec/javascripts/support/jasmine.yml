@@ -1,8 +1,9 @@
 src_files:
+  - js/crossword_maker.js
   - js/**/*.js
 stylesheets:
   - css/**/*.css
 helpers:
-  - "helpers/**/*.js"
+  - helpers/**/*.js
 spec_files:
-  - "**/*[sS]pec.js"
+  - "**/*spec.js"
