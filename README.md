@@ -20,7 +20,7 @@ spike for now, but I'm starting to retrofit it with Jasmine specs).
 * Preset starter grids
 * Automatic symmetry when blocking/unblocking cells
 * Display of percentage blocked
-* Auto-numbering of clues (but see [issue 3](https://github.com/kerryb/crossword-maker/issues/3))
+* Auto-numbering of clues
 
 ## Known issues
 

@@ -11,10 +11,11 @@ body {
 }
 
 #grid .row {
-  display: inline-block;
+  margin-bottom: -2px;
 }
 
 #grid .cell {
+  display: inline-block;
   border: 1px solid black;
   width: 30px;
   height: 30px;
