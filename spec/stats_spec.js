@@ -3,7 +3,7 @@ describe("CrosswordMaker.Stats", function() {
     it("updates the percentage blocked", function() {
       loadFixtures("small_blocked_grid.html");
       CrosswordMaker.Stats.update();
-      expect($("#percent-blocked").text()).toEqual("44.0");
+      expect($("#percent-blocked").text()).toEqual("48.0");
     });
   });
 });

@@ -5,7 +5,7 @@ CrosswordMaker.Numbering = (function() {
     $(document).bind("grid-updated", numberClues);
   };
 
-  function numberClues() {
+  _this.numberClues = function() {
     $("#grid .number").remove();
     var number = 1;
     $("#grid .cell:not(.block)").each(function() {
