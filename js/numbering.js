@@ -2,7 +2,7 @@ CrosswordMaker.Numbering = (function() {
   var _this = {};
 
   _this.bind = function() {
-    $(document).bind("grid-updated", numberClues);
+    $(document).bind("grid-updated", CrosswordMaker.Numbering.numberClues);
   };
 
   _this.numberClues = function() {
@@ -13,7 +13,7 @@ CrosswordMaker.Numbering = (function() {
         numberCell(this, number++);
       }
     });
-  }
+  };
 
   function startOfAcrossWord(cell) {
     var row = $(cell).data("row");
