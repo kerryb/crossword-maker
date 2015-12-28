@@ -4,11 +4,11 @@ describe("CrosswordMaker.Numbering", function() {
       loadFixtures("small_blocked_grid.html");
       CrosswordMaker.Numbering.numberClues();
       expect(cellNumbers()).toEqual([
-        "",  "1", "",  "2", "",
-        "3", "",  "",  "",  "",
-        "",  "",  "",  "",  "",
-        "",  "4", "",  "5", "",
-        "",  "",  "",  "",  ""
+        "1",  "", "",  "2", "3",
+        "", "",  "4",  "",  "",
+        "5",  "",  "",  "",  "",
+        "",  "", "",  "", "",
+        "6",  "",  "",  "7",  ""
       ]);
     });
 
@@ -20,7 +20,7 @@ describe("CrosswordMaker.Numbering", function() {
     });
 
     function cellNumbers() {
-      return $(".cell").map(function(_, cell) { return $(cell).find(".number").text(); });
+      return $(".cell").map(function(_, cell) { return $(cell).find(".number").text(); }).get();
     }
   });
 });

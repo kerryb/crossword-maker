@@ -6,11 +6,11 @@ describe("CrosswordMaker.Stats", function() {
     });
 
     it("updates the percentage blocked", function() {
-      expect($("#percent-blocked").text()).toEqual("48.0");
+      expect($("#percent-blocked").text()).toEqual("24.0");
     });
 
     it("updates the percentage blocked meter", function() {
-      expect($("#percent-blocked-meter-pointer").css("left")).toEqual("48px");
+      expect($("#percent-blocked-meter-pointer").css("left")).toEqual("24px");
     });
   });
 });
