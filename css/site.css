@@ -33,6 +33,34 @@ body {
   vertical-align: top;
 }
 
+#percent-blocked-meter {
+  height: 12px;
+  display: inline-block;
+}
+
+#percent-blocked-meter-background {
+  width: 100px;
+  height: 4px;
+  margin: 4px 0;
+  /* from http://www.cssmatic.com/gradient-generator */
+  background: rgba(255,0,0,1);
+  background: -moz-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 23%, rgba(0,255,0,1) 26%, rgba(0,255,0,1) 32%, rgba(255,0,0,1) 35%, rgba(255,0,0,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,0,0,1)), color-stop(23%, rgba(255,0,0,1)), color-stop(26%, rgba(0,255,0,1)), color-stop(32%, rgba(0,255,0,1)), color-stop(35%, rgba(255,0,0,1)), color-stop(100%, rgba(255,0,0,1)));
+  background: -webkit-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 23%, rgba(0,255,0,1) 26%, rgba(0,255,0,1) 32%, rgba(255,0,0,1) 35%, rgba(255,0,0,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 23%, rgba(0,255,0,1) 26%, rgba(0,255,0,1) 32%, rgba(255,0,0,1) 35%, rgba(255,0,0,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 23%, rgba(0,255,0,1) 26%, rgba(0,255,0,1) 32%, rgba(255,0,0,1) 35%, rgba(255,0,0,1) 100%);
+  background: linear-gradient(to right, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 23%, rgba(0,255,0,1) 26%, rgba(0,255,0,1) 32%, rgba(255,0,0,1) 35%, rgba(255,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#ff0000', GradientType=1 );
+}
+
+#percent-blocked-meter-pointer {
+  height: 12px;
+  border-left: 1px solid black;
+  float: left;
+  position: relative;
+  top: -12px;
+}
+
 #reset {
   margin-left: 30px;
   font-size: 1.5em;
